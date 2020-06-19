@@ -1,0 +1,38 @@
+table {
+    margin-top: 5px;
+}
+
+th {
+    background-color: lightslategray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    background-color: lightblue;
+    padding: 5px;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    width: 250px;
+    margin-right: 7px;
+}
+
+.add {
+    height: 30px;
+    width: 50px;
+    border:0;
+    color: white;
+    background-color:mediumseagreen;
+}
+
+.del {
+    height: 30px;
+    width: 50px;
+    border:0;
+    color: white;
+    background-color:lightcoral;
+}

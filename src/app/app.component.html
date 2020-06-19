@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+
+<input type="text" #newTask />
+<button class="add" (click)="addTask(newTask.value); newTask.value=''">add</button>
+
+<table>
+  <tr>
+    <th>label</th>
+    <th>priority</th>
+    <th>completed</th>
+    <th>action</th>
+  </tr>
+  
+  <tr *ngFor="let todo of tasks">
+    <td>{{todo.label}}</td>
+    <td>{{todo.priority}}</td>
+    <td>{{todo.completed ? '&#10003;' : '&#10005;'}}</td>
+    <td>
+      <button class="del" (click)="deleteTask(todo)">delete</button>
+    </td>
+  </tr>
+</table>
+
+<router-outlet></router-outlet>
